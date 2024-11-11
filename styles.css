@@ -1,0 +1,252 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lora', serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    background-color: #4b2e83;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app-button img {
+    width: 150px;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.feature {
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #4b2e83;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.testimonial {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial h4 {
+    text-align: right;
+    font-weight: normal;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #4b2e83;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.cta h2 {
+    margin-bottom: 40px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 80px 0;
+}
+
+.newsletter h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 15px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 15px 30px;
+    background-color: #4b2e83;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #3a2366;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 40px 0;
+}
+
+.footer-social {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    color: #bbb;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #bbb;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-contact a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-list, .testimonial-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 100%;
+    }
+}
